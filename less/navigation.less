@@ -2,10 +2,20 @@
 nav {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px dashed gray;
+    margin: 3vh 0%;
+    @media @mobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
     
     h1 {
         align-self: flex-start;
+        @media @mobile {
+            width: 100%;
+        }
+        
         
     } // end of h1
 
@@ -16,10 +26,18 @@ nav {
         justify-content: space-around;
         width: 25vw;
         font-size: 1.5rem;
+        @media @mobile {
+            width: 100%;
+        }
         
         a{
             text-decoration: none;
             font-weight: bold;
         }//end of a
     } // end of nav-buttons  
+    @media @mobile {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 100%;
+    }
 }//end of nav
