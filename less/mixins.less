@@ -1,1 +1,25 @@
 // Mixins in here
+
+
+// .button (@width, @color, @backgroundcolor) {
+//     width: @width;
+//     color: @color;
+//     background-color: @backgroundcolor;
+// }
+
+.border() {
+    border-bottom: 2px dashed @navigation-border;
+}
+.outside {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.inside {
+    flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        padding: 6%;
+}
